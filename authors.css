@@ -1,0 +1,124 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: white;
+}
+
+.header img{
+  width: 100px;
+  height: 100px;
+  rotate: -90deg;
+  margin: 1.5%;
+  margin-bottom: -3%;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2em 1em;
+  text-align: center;
+}
+.column {
+  width: 100%;
+  padding: 0.5em 0;
+}
+h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 3.5em;
+  color: #f5f120;
+}
+.card {
+  box-shadow: 0 0 38.4px rgba(25, 0, 58, 0.1);
+  padding: 56px 16px;
+  border-radius: 9.6px;
+  color: #f5f120;
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: #ffffff;
+}
+.card img {
+  width: 270px;
+  height: 260px;
+}
+.card h3 {
+  font-weight: 500;
+}
+.card h4 {
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 8px 0 32px 0;
+  letter-spacing: 2px;
+}
+.icons {
+  width: 50%;
+  min-width: 180px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.card a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 22.4px;
+}
+.card:hover {
+  background: linear-gradient(#ffcb05, #3d7dca, #003a70);
+  color: #ffffff;
+}
+.card:hover .img-container {
+  transform: scale(1.15);
+}
+
+
+@media screen and (min-width: 768px) {
+  section {
+    padding: 16px 112px;
+  }
+}
+@media screen and (min-width: 992px) {
+  section {
+    padding: 16px;
+  }
+  .card {
+    padding: 80px 16px;
+  }
+  .column {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 0 16px;
+  }
+  .footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(230, 196, 3);
+    color: black;
+    margin-top: 5%;
+    padding: 2%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer{
+    width: 100%;
+    font-size: 15px;
+    background-color:rgb(230, 196, 3);
+    margin-top: 5%;
+    padding: 2%;
+  }
+}
+
+@media screen and (max-width: 384px) {
+  .footer{
+    width: 100%;
+    font-size: 10px;
+    background-color:rgb(230, 196, 3);
+    margin-top: 5%;
+    padding: 2%;
+  }
+}

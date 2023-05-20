@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopéMon</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+
+    <header class="header">
+
+        <div class="flex top">
+
+
+            <a href="#"><img src="https://yt3.googleusercontent.com/21NMaAgbFP-yPCgak8Deq8iMxLo5oRID9h13rICBh5WhcffDKupK-FEu3kIHZBHvYz5eKbrIzk8=s900-c-k-c0x00ffffff-no-rj" alt="logo devourpuff"></a>
+
+            <nav class="navbar">
+                <a href="#">Home</a>
+                <a href="authors.html">About</a>
+                <a href="#items">Items</a>
+                <a href="#order">Order</a>
+            </nav>
+
+        </div>
+
+    </header>
+
+    <!-- header section ends -->
+
+    <br><br><br><br><br>
+    <br><br>
+
+    <!-- menu section starts  -->
+
+    <section class="order" id="items">
+
+        <h1 class="heading">GOTTA CATCH 'EM ALL!</h1>
+
+        <form action="http://sirjm.infinityfreeapp.com/checkout.php" onsubmit="formSubmit()">
+            <div class="form_wrap">
+
+                <div class="display-orders">
+                    <div class="items-header">
+                        <img src="https://lh3.googleusercontent.com/nEqV6J9QDS9qbWFdYXRc-Rm2V15chlLbBuosAFu0PXp5LoOlNLcNp1JUtceqCahG9i7yHy22ft-3vARzCnRObJzFBPVDtJd2yobHIC9SQlYAFgw-QnsgrMkxm6jH1Rj_5ujvlVLcnA=w2400"
+                            alt="mens apparel">
+                    </div>
+
+                    <div class="row">
+                        <div class="card one">
+                            <div class="image">
+                                <br>
+                                <img id="prod1" src="https://i.ibb.co/P9j7d7r/Pokeball-1.png"
+                                    alt="Nike x CE Windbreaker Jacket">
+                            </div>
+                            <div class="title">
+                                <h1>Nike x CE Windbreaker Jacket</h1>
+                                <h1><small>₱3270.00</small></h1>
+                            </div>
+                            <div class="description">
+                                <button id="prod1num" type="button" class="amountbtn">0</button>
+                                <br>
+                                <input type="button" value="I Choose You!" class="itembtn itembtn1" name="order"
+                                    onclick="add(1)">
+                                <input type="button" value="Come Back!" class="itembtn" name="unorder"
+                                    onclick="subtract(1)">
+                                <p></p>
+                            </div>
+                        </div>
+
+                        <div class="card two">
+                            <div class="image">
+                                <br>
+                                <img id="prod2" src="https://i.ibb.co/qYstHPt/Pokeball.png"
+                                    alt="V Neck Sweater Vest with Polo">
+                            </div>
+                            <div class="title">
+                                <h1>V Neck Sweater Vest with Polo</h1>
+                                <h1><small>₱950.00</small></h1>
+                            </div>
+                            <div class="description">
+                                <button id="prod2num" type="button" class="amountbtn">0</button>
+                                <br>
+                                <input type="button" value="I Choose You!" class="itembtn itembtn1" name="order"
+                                    onclick="add(2)">
+                                <input type="button" value="Come Back!" class="itembtn" name="unorder"
+                                    onclick="subtract(2)">
+                                <p></p>
+                            </div>
+                        </div>
+
+                        <div class="card three">
+                            <div class="image">
+                                <br>
+                                <img id="prod3" src="https://i.ibb.co/HhszVLV/Pokeball-2.png"
+                                    alt="Black Cargo Pants">
+                            </div>
+                            <div class="title">
+                                <h1> Streetwear Black Cargo Pants</h1>
+                                <h1><small>₱790.00</small></h1>
+                            </div>
+                            <div class="description">
+                                <button id="prod3num" type="button" class="amountbtn">0</button>
+                                <br>
+                                <input type="button" value="I Choose You!" class="itembtn itembtn1" name="order"
+                                    onclick="add(3)">
+                                <input type="button" value="Come Back!" class="itembtn" name="unorder"
+                                    onclick="subtract(3)">
+                                <p></p>
+                            </div>
+                        </div>
+
+                        <div class="card four">
+                            <div class="image">
+                                <br>
+                                <img id="prod4" src="https://i.ibb.co/y89tjvr/Pokeball-3.png"
+                                    alt="Nexus Ripstop Cargo Shorts">
+                            </div>
+                            <div class="title">
+                                <h1>Nexus Ripstop Cargo Shorts</h1>
+                                <h1><small>₱590.00</small></h1>
+                            </div>
+                            <div class="description">
+                                <button id="prod4num" type="button" class="amountbtn">0</button>
+                                <br>
+                                <input type="button" value="I Choose You!" class="itembtn itembtn1" name="order"
+                                    onclick="add(4)">
+                                <input type="button" value="Come Back!" class="itembtn" name="unorder"
+                                    onclick="subtract(4)">
+                                <p></p>
+                            </div>
+                        </div>
+
+                        <div class="card five">
+                            <div class="image">
+                                <br>
+                                <img id="prod5" src="https://i.ibb.co/NSR0qPK/Pokeball-4.png"
+                                    alt="Air Jordan 1 Retro High Silver Toe">
+                            </div>
+                            <div class="title">
+                                <h1>Air Jordan 1 Retro High Silver Toe</h1>
+                                <h1><small>₱16700.00</small></h1>
+                            </div>
+                            <div class="description">
+                                <button id="prod5num" type="button" class="amountbtn">0</button>
+                                <br>
+                                <input type="button" value="I Choose You!" class="itembtn itembtn1" name="order"
+                                    onclick="add(5)">
+                                <input type="button" value="Come Back!" class="itembtn" name="unorder"
+                                    onclick="subtract(5)">
+                                <p></p>
+                            </div>
+                        </div>
+
+                        <div class="card six">
+                            <div class="image">
+                                <br>
+                                <img id="prod6" src="https://i.ibb.co/Xs8Fg9J/Pokeball-5.png"
+                                    alt="Bapesta Glitter Brown Low Cut">
+                            </div>
+                            <div class="title">
+                                <h1>Bapesta Glitter Brown Low Cut</h1>
+                                <h1><small>₱13200.00</small></h1>
+                            </div>
+                            <div class="description">
+                                <button id="prod6num" type="button" class="amountbtn">0</button>
+                                <br>
+                                <input type="button" value="I Choose You!" class="itembtn itembtn1" name="order"
+                                    onclick="add(6)">
+                                <input type="button" value="Come Back!" class="itembtn" name="unorder"
+                                    onclick="subtract(6)">
+                                <p></p>
+                            </div>
+                        </div>
+
+                        <br><br><br><br><br><br><br><br>
+
+                        <div class="items-header">
+                            <img src="https://i.ibb.co/7Wmrkwq/Men-s-Apparel-1.png"
+                                alt="womens apparel">
+                        </div>
+                        <br>
+                        <div class="card seven">
+                            <div class="image">
+                                <br>
+                                <img id="prod7" src="https://i.ibb.co/GH0Xrc9/Pokeball-6.png"
+                                    alt="Vetior V Neck Long Sleeve">
+                            </div>
+                            <div class="title">
+                                <h1>Vetior V Neck Long Sleeve</h1>
+                                <h1><small>₱950.00</small></h1>
+                            </div>
+                            <div class="description">
+                                <button id="prod7num" type="button" class="amountbtn">0</button>
+                                <br>
+                                <input type="button" value="I Choose You!" class="itembtn itembtn1" name="order"
+                                    onclick="add(7)">
+                                <input type="button" value="Come Back!" class="itembtn" name="unorder"
+                                    onclick="subtract(7)">
+                                <p></p>
+                            </div>
+                        </div>
+
+                        <div class="card eight">
+                            <div class="image">
+                                <br>
+                                <img id="prod8" src="https://i.ibb.co/Kj1Y63F/Pokeball-7.png"
+                                    alt="Baby Dress Halter Long Sleeve">
+                            </div>
+                            <div class="title">
+                                <h1>Baby Dress Halter Long Sleeve</h1>
+                                <h1><small>₱2370.00</small></h1>
+                            </div>
+                            <div class="description">
+                                <button id="prod8num" type="button" class="amountbtn">0</button>
+                                <br>
+                                <input type="button" value="I Choose You!" class="itembtn itembtn1" name="order"
+                                    onclick="add(8)">
+                                <input type="button" value="Come Back!" class="itembtn" name="unorder"
+                                    onclick="subtract(8)">
+                                <p></p>
+                            </div>
+                        </div>
+
+                        <div class="card nine">
+                            <div class="image">
+                                <br>
+                                <img id="prod9" src="https://i.ibb.co/F0B4jWC/Pokeball-8.png"
+                                    alt="Matte Viscose Wide Leg Pants">
+                            </div>
+                            <div class="title">
+                                <h1>Matte Viscose Wide Leg Pants</h1>
+                                <h1><small>₱830.00</small></h1>
+                            </div>
+                            <div class="description">
+                                <button id="prod9num" type="button" class="amountbtn">0</button>
+                                <br>
+                                <input type="button" value="I Choose You!" class="itembtn itembtn1" name="order"
+                                    onclick="add(9)">
+                                <input type="button" value="Come Back!" class="itembtn" name="unorder"
+                                    onclick="subtract(9)">
+                                <p></p>
+                            </div>
+                        </div>
+
+                        <div class="card ten">
+                            <div class="image">
+                                <br>
+                                <img id="prod10" src="https://i.ibb.co/KrfW3Pr/Pokeball-9.png"
+                                    alt="Dazcos Plaid Skirt High Waist">
+                            </div>
+                            <div class="title">
+                                <h1>Dazcos Plaid Skirt High Waist</h1>
+                                <h1><small>₱750.00</small></h1>
+                            </div>
+                            <div class="description">
+                                <button id="prod10num" type="button" class="amountbtn">0</button>
+                                <br>
+                                <input type="button" value="I Choose You!" class="itembtn itembtn1" name="order"
+                                    onclick="add(10)">
+                                <input type="button" value="Come Back!" class="itembtn" name="unorder"
+                                    onclick="subtract(10)">
+                                <p></p>
+                            </div>
+                        </div>
+
+                        <div class="card eleven">
+                            <div class="image">
+                                <br>
+                                <img id="prod11" src="https://i.ibb.co/vkX49x2/Pokeball-10.png"
+                                    alt="Chunky High Platform Heels">
+                            </div>
+                            <div class="title">
+                                <h1>Chunky High Platform Heels</h1>
+                                <h1><small>₱3580.00</small></h1>
+                            </div>
+                            <div class="description">
+                                <button id="prod11num" type="button" class="amountbtn">0</button>
+                                <br>
+                                <input type="button" value="I Choose You!" class="itembtn itembtn1" name="order"
+                                    onclick="add(11)">
+                                <input type="button" value="Come Back!" class="itembtn" name="unorder"
+                                    onclick="subtract(11)">
+                                <p></p>
+                            </div>
+                        </div>
+
+                        <div class="card twelve">
+                            <div class="image">
+                                <br>
+                                <img id="prod12" src="https://i.ibb.co/sCH9qhD/Pokeball-11.png"
+                                    alt="New Balance 992 Navy White">
+                            </div>
+                            <div class="title">
+                                <h1>New Balance 992 Navy White</h1>
+                                <h1><small>₱14300.00</small></h1>
+                            </div>
+                            <div class="description">
+                                <button id="prod12num" type="button" class="amountbtn">0</button>
+                                <br>
+                                <input type="button" value="I Choose You!" class="itembtn itembtn1" name="order"
+                                    onclick="add(12)">
+                                <input type="button" value="Come Back!" class="itembtn" name="unorder"
+                                    onclick="subtract(12)">
+                                <p></p>
+                            </div>
+                        </div>
+
+                        <br><br><br><br><br><br><br><br>
+
+                        <div class="items-header">
+                            <img src="https://i.ibb.co/JRc7sXg/Men-s-Apparel-2.png"
+                                alt="childrens apparel">
+                        </div>
+                        <br>
+
+                        <div class="card thirteen">
+                            <div class="image">
+                                <br>
+                                <img id="prod13" src="https://i.ibb.co/jvyjdZm/Pokeball-14.png"
+                                    alt="Pink Collared Infant Dress">
+                            </div>
+                            <div class="title">
+                                <h1>Pink Collared Infant Dress</h1>
+                                <h1><small>₱940.00</small></h1>
+                            </div>
+                            <div class="description">
+                                <button id="prod13num" type="button" class="amountbtn">0</button>
+                                <br>
+                                <input type="button" value="I Choose You!" class="itembtn itembtn1" name="order"
+                                    onclick="add(13)">
+                                <input type="button" value="Come Back!" class="itembtn" name="unorder"
+                                    onclick="subtract(13)">
+                                <p></p>
+                            </div>
+                        </div>
+
+                        <div class="card fourteen">
+                            <div class="image">
+                                <br>
+                                <img id="prod14" src="https://i.ibb.co/DrGK26f/Pokeball-15.png"
+                                    alt="Two Piece Infant Joggers">
+                            </div>
+                            <div class="title">
+                                <h1>Two Piece Infant Joggers</h1>
+                                <h1><small>₱940.00</small></h1>
+                            </div>
+                            <div class="description">
+                                <button id="prod14num" type="button" class="amountbtn">0</button>
+                                <br>
+                                <input type="button" value="I Choose You!" class="itembtn itembtn1" name="order"
+                                    onclick="add(14)">
+                                <input type="button" value="Come Back!" class="itembtn" name="unorder"
+                                    onclick="subtract(14)">
+                                <p></p>
+                            </div>
+                        </div>
+
+                        <div class="card fifteen">
+                            <div class="image">
+                                <br>
+                                <img id="prod15" src="https://i.ibb.co/Gn2DbXP/Pokeball-13.png"
+                                    alt="Pokemon Pink Pajama Sleepwear">
+                            </div>
+                            <div class="title">
+                                <h1>Pokemon Pink Pajama Sleepwear</h1>
+                                <h1><small>₱650.00</small></h1>
+                            </div>
+                            <div class="description">
+                                <button id="prod15num" type="button" class="amountbtn">0</button>
+                                <br>
+                                <input type="button" value="I Choose You!" class="itembtn itembtn1" name="order"
+                                    onclick="add(15)">
+                                <input type="button" value="Come Back!" class="itembtn" name="unorder"
+                                    onclick="subtract(15)">
+                                <p></p>
+                            </div>
+                        </div>
+
+                        <div class="card sixteen">
+                            <div class="image">
+                                <br>
+                                <img id="prod16" src="https://i.ibb.co/ck78rg0/Pokeball-12.png" 
+                                    alt="Pokemon Blue Pajama Sleepwear">
+                            </div>
+                            <div class="title">
+                                <h1>Pokemon Blue Pajama Sleepwear</h1>
+                                <h1><small>₱650.00</small></h1>
+                            </div>
+                            <div class="description">
+                                <button id="prod16num" type="button" class="amountbtn">0</button>
+                                <br>
+                                <input type="button" value="I Choose You!" class="itembtn itembtn1" name="order"
+                                    onclick="add(16)">
+                                <input type="button" value="Come Back!" class="itembtn" name="unorder"
+                                    onclick="subtract(16)">
+                                <p></p>
+                            </div>
+                        </div>
+
+                        <div class="card seventeen">
+                            <div class="image">
+                                <br>
+                                <img id="prod17" src="https://i.ibb.co/51frL4c/Pokeball-16.png"
+                                    alt="Crocs Toddlers' x Pokemon 2">
+                            </div>
+                            <div class="title">
+                                <h1>Crocs Toddlers' x Pokemon 2</h1>
+                                <h1><small>₱2300.00</small></h1>
+                            </div>
+                            <div class="description">
+                                <button id="prod17num" type="button" class="amountbtn">0</button>
+                                <br>
+                                <input type="button" value="I Choose You!" class="itembtn itembtn1" name="order"
+                                    onclick="add(17)">
+                                <input type="button" value="Come Back!" class="itembtn" name="unorder"
+                                    onclick="subtract(17)">
+                                <p></p>
+                            </div>
+                        </div>
+
+                        <div class="card eighteen">
+                            <div class="image">
+                                <br>
+                                <img id="prod18" src="https://i.ibb.co/Lr0qvhd/Pokeball-17.png"
+                                    alt="GU High Top Eevee Sneakers">
+                            </div>
+                            <div class="title">
+                                <h1>GU High Top Eevee Sneakers</h1>
+                                <h1><small>₱3200.00</small></h1>
+                            </div>
+                            <div class="description">
+                                <button id="prod18num" type="button" class="amountbtn">0</button>
+                                <br>
+                                <input type="button" value="I Choose You!" class="itembtn itembtn1" name="order"
+                                    onclick="add(18)">
+                                <input type="button" value="Come Back!" class="itembtn" name="unorder"
+                                    onclick="subtract(18)">
+                                <p></p>
+                            </div>
+                        </div>
+
+                        <br><br><br><br><br><br><br><br>
+
+                        <div class="items-header">
+                            <img src="https://i.ibb.co/ZVcxCL2/Men-s-Apparel-3.png"
+                                alt="funko pops">
+                        </div>
+                        <br>
+
+                        <div class="card nineteen">
+                            <div class="image">
+                                <br>
+                                <img id="prod19" src="https://i.ibb.co/k0wTn3Y/Pokeball-20.png"
+                                    alt="FunkoPopPikachu">
+                            </div>
+                            <div class="title">
+                                <h1>Funko Pop Pikachu Original</h1>
+                                <h1><small>₱670.00</small></h1>
+                            </div>
+                            <div class="description">
+                                <button id="prod19num" type="button" class="amountbtn">0</button>
+                                <br>
+                                <input type="button" value="I Choose You!" class="itembtn itembtn1" name="order"
+                                    onclick="add(19)">
+                                <input type="button" value="Come Back!" class="itembtn" name="unorder"
+                                    onclick="subtract(19)">
+                                <p></p>
+                            </div>
+                        </div>
+
+                        <div class="card twenty">
+                            <div class="image">
+                                <br>
+                                <img id="prod20" src="https://i.ibb.co/0Kr14zb/Pokeball-18.png"
+                                    alt="FunkoPopCharmander">
+                            </div>
+                            <div class="title">
+                                <h1>Funko Pop Charmander Original</h1>
+                                <h1><small>₱670.00</small></h1>
+                            </div>
+                            <div class="description">
+                                <button id="prod20num" type="button" class="amountbtn">0</button>
+                                <br>
+                                <input type="button" value="I Choose You!" class="itembtn itembtn1" name="order"
+                                    onclick="add(20)">
+                                <input type="button" value="Come Back!" class="itembtn" name="unorder"
+                                    onclick="subtract(20)">
+                                <p></p>
+                            </div>
+                        </div>
+
+                        <div class="card twentyone">
+                            <div class="image">
+                                <br>
+                                <img id="prod21" src="https://i.ibb.co/K9Qx1zw/Pokeball-19.png"
+                                    alt="FunkoPopBulbasaur">
+                            </div>
+                            <div class="title">
+                                <h1>Funko Pop Bulbasaur Original</h1>
+                                <h1><small>₱670.00</small></h1>
+                            </div>
+                            <div class="description">
+                                <button id="prod21num" type="button" class="amountbtn">0</button>
+                                <br>
+                                <input type="button" value="I Choose You!" class="itembtn itembtn1" name="order"
+                                    onclick="add(21)">
+                                <input type="button" value="Come Back!" class="itembtn" name="unorder"
+                                    onclick="subtract(21)">
+                                <p></p>
+                            </div>
+                        </div>
+
+                        <div class="card twentytwo">
+                            <div class="image">
+                                <br>
+                                <img id="prod22" src="https://i.ibb.co/1K6rXSZ/Pokeball-23.png" 
+                                    alt="FunkoPopMewtwo">
+                            </div>
+                            <div class="title">
+                                <h1>Funko Pop Mewtwo Original</h1>
+                                <h1><small>₱670.00</small></h1>
+                            </div>
+                            <div class="description">
+                                <button id="prod22num" type="button" class="amountbtn">0</button>
+                                <br>
+                                <input type="button" value="I Choose You!" class="itembtn itembtn1" name="order"
+                                    onclick="add(22)">
+                                <input type="button" value="Come Back!" class="itembtn" name="unorder"
+                                    onclick="subtract(22)">
+                                <p></p>
+                            </div>
+                        </div>
+
+                        <div class="card twentythree">
+                            <div class="image">
+                                <br>
+                                <img id="prod23" src="https://i.ibb.co/PTr6qpn/Pokeball-21.png" 
+                                    alt="FunkoPopVulpix">
+                            </div>
+                            <div class="title">
+                                <h1>Funko Pop Vulpix Original</h1>
+                                <h1><small>₱670.00</small></h1>
+                            </div>
+                            <div class="description">
+                                <button id="prod23num" type="button" class="amountbtn">0</button>
+                                <br>
+                                <input type="button" value="I Choose You!" class="itembtn itembtn1" name="order"
+                                    onclick="add(23)">
+                                <input type="button" value="Come Back!" class="itembtn" name="unorder"
+                                    onclick="subtract(23)">
+                                <p></p>
+                            </div>
+                        </div>
+
+                        <div class="card twentyfour">
+                            <div class="image">
+                                <br>
+                                <img id="prod24" src="https://i.ibb.co/zhK0CqP/Pokeball-22.png"
+                                    alt="FunkoPopFlareon">
+                            </div>
+                            <div class="title">
+                                <h1>Funko Pop Flareon Original</h1>
+                                <h1><small>₱670.00</small></h1>
+                            </div>
+                            <div class="description">
+                                <button id="prod24num" type="button" class="amountbtn">0</button>
+                                <br>
+                                <input type="button" value="I Choose You!" class="itembtn itembtn1" name="order"
+                                    onclick="add(24)">
+                                <input type="button" value="Come Back!" class="itembtn" name="unorder"
+                                    onclick="subtract(24)">
+                                <p></p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <!-- menu section ends -->
+
+                <!-- order section starts -->
+                <div class="row" id="order">
+                    <div id="noeffect" class="cart">
+                        <br>
+                        <h1> PokéCart</h1>
+                        <ul id="list" class="cust_ordercart">
+
+                        </ul>
+                        <ul class="cust_ordertotal">
+                            <li>Total:
+                                <div id="totalprice" class="cust_orderprice">₱ 0</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <!-- NAME -->
+                    <div class="inputBox">
+                        <label>Name:</label>
+                        <input type="text" name="cust_name" id="txtcust_name" class="box" required
+                            placeholder="Format: Last Name, Given Name M.I." maxlength="747">
+                    </div>
+
+                    <!-- ADDRESS -->
+                    <div class="inputBox">
+                        <label>Address:</label>
+                        <input type="text" name="cust_addr" id="txtcust_addr" class="box" required
+                            placeholder="Format: House/Building no., Street, Village, City, Province">
+                    </div>
+
+                    <!-- CELLPHONE NUMBER-->
+                    <div class="inputBox">
+                        <label>Cellphone Number:</label>
+                        <input type="number" name="cpnumber" id="txtcpnumber" class="box" required
+                            placeholder="Format: 09123456789">
+                    </div>
+
+                    <!-- EMAIL -->
+                    <div class="inputBox">
+                        <label>Email:</label>
+                        <input type="text" name="cust_email" id="txtcust_email" class="box" required
+                            placeholder="For Example: celagio2026@clc.pshs.edu.ph">
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- order section ends -->
+
+            <!-- RESTAURANT NAME -->
+            <input type="submit" value="order now" class="btn" name="order">
+
+            <input class="form-control" type="hidden" id="cust_order" name="cust_order">
+
+        </form>
+
+    </section>
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <i class="fas fa-phone"></i>
+                <h3>phone number</h3>
+                <p>+63-969-609-8887</p>
+                <p>+63-961-296-1888</p>
+                <p>+63-927-864-7372</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Our Address</h3>
+                <p>Railway HWY, Blossom Street, Blossom Province, besides Buttercup and accross Predator</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-clock"></i>
+                <h3>opening hours</h3>
+                <p>Weekdays: 9 AM - 10 PM</p>
+                <p>Weekends: 8 AM - 9 PM</p>
+                <br><br>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-envelope"></i>
+                <h3>email address</h3>
+                <p>celagio2026@clc.pshs.edu.ph</p>
+                <p>jocampo2026@clc.pshs.edu.ph</p>
+                <p>cdizon2026@clc.pshs.edu.ph</p>
+            </div>
+
+        </div>
+
+        <div class="credit">
+            &copy; copyright @ 2023 by Group 8 | all rights reserved
+        </div>
+
+    </section>
+
+    <!-- footer section ends -->
+
+    <!-- js file link  -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
